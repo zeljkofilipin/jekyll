@@ -7,7 +7,7 @@ title: Labels
   {% for label in site.labels %}
     <li>
       <h2><a href="{{ label.url }}">{{ label.name }}</a></h2>
-      <p>{{ author.content | markdownify }}</p>
+      <p>{{ label.content | markdownify }}</p>
     </li>
   {% endfor %}
 </ul>
