@@ -12,6 +12,11 @@ defaults:
       layout: "author"
   - scope:
       path: ""
+      type: "labels"
+    values:
+      layout: "label"
+  - scope:
+      path: ""
       type: "posts"
     values:
       layout: "post"
