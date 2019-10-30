@@ -3,6 +3,11 @@ title: Tags
 ---
 <h1>{{ page.title }}</h1>
 
-{% for tag in site.tags %}
-  <h3>{{ tag[0] }} ({{ tag[1] | size }})</h3>
-{% endfor %}
+<ul>
+  {% for tag in site.tags %}
+    <li>
+      <h2><a href="{{ tag.url }}">{{ tag.name }}</a></h2>
+      <p>{{ tag.content | markdownify }}</p>
+    </li>
+  {% endfor %}
+</ul>
